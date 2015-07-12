@@ -159,7 +159,7 @@ header {
     min-height: auto;
     .background-cover;
     background-position: center;
-    background-image: url('../img/header.jpg');
+    background-image: url(@header-url);
     text-align: center;
     color: white;
     .header-content {
@@ -179,9 +179,10 @@ header {
             }
             p {
                 font-weight: 300;
-                color: fade(white, 70%);
+                color: white;
                 font-size: 16px;
                 margin-bottom: 50px;
+                text-shadow: 2px 2px fade(black, 70%);
             }
         }
     }
@@ -345,4 +346,9 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @theme-dark;
+}
+
+#map-canvas {
+    width: 100%;
+    height: 400px;
 }
