@@ -398,6 +398,7 @@ body {
   webkit-tap-highlight-color: #8a6e64;
 }
 .menu ul {
+  padding-left: 0;
   list-style-position: inside;
 }
 .menu ul li > p {
