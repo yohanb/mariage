@@ -397,6 +397,18 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #8a6e64;
 }
+.menu ul {
+  list-style-position: inside;
+}
+.menu ul li > p {
+  margin-bottom: 10px;
+}
+#rsvp .btn {
+  font-size: 20px;
+}
+#rsvp em {
+  font-size: 20px;
+}
 #map-canvas {
   width: 100%;
   height: 400px;
