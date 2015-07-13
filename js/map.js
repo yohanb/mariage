@@ -4,6 +4,7 @@
     var options = {
       center: coordinates,
       zoom: 8,
+      scrollwheel: false,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     }
 
