@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mariage à Yohan & Sophie</title>
+    <title>Mariage de Yohan & Sophie</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
@@ -58,7 +58,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#about">Détails</a>
+                        <a class="page-scroll" href="#about" data-bind="text: details"></a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#menu">Au menu</a>
@@ -84,7 +84,7 @@
             <div class="header-content-inner">
                 <h1>Mariage de</br>Yohan & Sophie Lan</h1>
                 <hr>
-                <p>Bienvenue sur le site de notre mariage!  Si vous êtes rendus ici, c'est que nous vous avons soigneusement choisis afin de partager cette journée spéciale avec nous.  S'il vous plait, prenez le temps de visiter le site afin de vous informer des détails de cette belle journée.  À bientôt famille & amis!</p>
+                <p>Bienvenue sur le site de notre mariage!  Si vous êtes rendus ici, c'est que nous vous avons soigneusement choisis afin de partager cette journée spéciale avec nous.  S'il vous plait, prenez le temps de visiter le site afin de vous informer des <!--ko text: details --><!-- /ko --> de cette belle journée.  À bientôt famille & amis!</p>
                 <a href="#about" class="btn btn-primary btn-xl page-scroll">En apprendre plus!</a>
             </div>
         </div>
@@ -94,7 +94,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Détails de la journée</h2>
+                    <h2 class="section-heading"><span data-bind="text: details" style="text-transform: capitalize;"></span> de la journée</h2>
                     <hr class="light">
                     <p class="text-faded">La cérémonie aura lieu le <u>17 octobre 2015 et débutera vers 14h00</u> sur le site de l'Auberge Château Bromont, à l'extérieur.  Une salle de l'auberge a été prévue en cas de pluie.</p>
                     <p class="text-faded">Ensuite, au programme, nous vous proposons un cocktail de bienvenue, un souper 4 services suivis d'un party mémorable!</p>
@@ -140,6 +140,7 @@
                     <h2 class="section-heading">Hébergement</h2>
                     <hr>
                     <p>Comme vous n'aurez pas à vous occuper de vos enfants et que nous allons fêter très fort, nous vous suggérons fortement de réserver votre chambre à l'auberge (à quelques pas de la salle... c'est bon à savoir non?).</p>
+                    <p><u>Réservez votre chambre avant le 17 septembre</u>. Après cette date ça sera selon les disponibilités de l'établissement.</p>
                     <i class="fa fa-2x fa-phone wow bounce"></i><p><strong>Pour réserver: 1-888-276-6668</strong></p>
                     <em>* N'oubliez pas de mentionner que c'est pour notre mariage.</em>
                 </div>
@@ -208,15 +209,15 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/creative.js"></script>
 
-    <!-- Map configuration -->
-    <script src="js/map.js"></script>
-
     <!-- slider -->
     <script src="js/slippry.min.js" type="text/javascript"></script>
 
-    <script type="text/javascript">
-        jQuery("#slider").slippry({ pager: false, autoHover: false });
-    </script>
+    <!-- knockoutjs -->
+    <script src="js/knockout-3.3.0.min.js" type="text/javascript"></script>
+
+    <!-- Main application module -->
+    <script src="js/app.js"></script>
+
 </body>
 
 </html>
